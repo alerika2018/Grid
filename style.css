@@ -5,6 +5,7 @@
   padding-top: 30px;
   text-align: center;
   font-size: 22pt;
+  width: 100%;
 }
 .header_layout {
   display: flex;
@@ -48,8 +49,8 @@ h2 {
 .wrapper {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 4;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 4; */
   grid-gap: 1rem;
 }
 .child {
@@ -62,4 +63,11 @@ h2 {
 img {
   width: 100%;
   align-self: center;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 4;
+  }
 }
